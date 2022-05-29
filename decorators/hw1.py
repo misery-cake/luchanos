@@ -66,7 +66,7 @@ def psycho_sum_of_many(first, second, third, fourth, *args, **kwargs):
     mandatory_sum = sum([first, second, third, fourth])
 
     additional_args_num = 2
-    additional_sum = sum(args[:additional_args_num]) if len(args) >= 2 else 0
+    additional_sum = sum(args[:additional_args_num]) if len(args) >= additional_args_num else 0
 
     random_kwarg = choice(list(kwargs.values())) if kwargs else 0
 
